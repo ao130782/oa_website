@@ -1833,3 +1833,21 @@ a:hover {
   opacity: 0.6;
   pointer-events: none;
 }
+.profile-photo {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 50%;
+  box-shadow: 0 8px 32px rgba(30, 64, 175, 0.15), 0 2px 4px rgba(10,110,180,0.06);
+  border: 6px solid #fff;
+  transition: transform 0.4s cubic-bezier(.19,1,.22,1);
+}
+.profile-photo:hover {
+  transform: scale(1.04) translateY(-6px) rotate(-2deg);
+}
+@media (max-width: 600px) {
+  .profile-photo {
+    width: 120px;
+    height: 120px;
+  }
+}
